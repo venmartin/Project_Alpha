@@ -510,6 +510,10 @@ Container for search bar, logo and search button.
     border-bottom-left-radius: 15px;
   }
 
+  .shortcut-container {
+    display: flex;
+  }
+
   .shortcut-container > * svg {
     height: 2em;
     width: 2em;
@@ -589,7 +593,7 @@ Container for search bar, logo and search button.
   }
 
   .card .card-ani {
-    margin-top:
+    margin-top: 0px;
   }
 
 
@@ -628,6 +632,10 @@ Container for search bar, logo and search button.
     overflow: none;
   }
 
+  .shortcut-container svg {
+    height: 1.2em;
+    width: 1.2em;
+  }
   /* .shortcut-container:hover {
     transform: translateY(30px);
     overflow: none;
