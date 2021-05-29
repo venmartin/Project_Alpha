@@ -219,6 +219,26 @@ document.querySelector('.shift-bg3').addEventListener('click', function() {
 })
 
 
+// Search Duckduckgo Directly.
+
+document.querySelector('.websr-btn').addEventListener('click', function () {
+  let onlineSearch = document.querySelector('.online-search');
+  let searchResult = onlineSearch.value;
+  window.open(`https://duckduckgo.com/?q=${searchResult}&t=hc&va=u&ia=web`, "_blank");
+  onlineSearch.value = '';
+})
+
+document.querySelector('.online-search').addEventListener('keyup', function (event) {
+  if (event.key == 'Enter') {
+  let onlineSearch = document.querySelector('.online-search');
+  let searchResult = onlineSearch.value;
+  window.open(`https://duckduckgo.com/?q=${searchResult}&t=hc&va=u&ia=web`, "_blank");
+  onlineSearch.value = '';
+  }
+})
+
+
+
 
 // Dock new tab eventlisteners.
 

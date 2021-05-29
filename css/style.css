@@ -50,7 +50,7 @@ body {
   padding: 0px;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to bottom, #292929a9 33%, transparent 33%);
+  background: linear-gradient(to bottom, #292929a9 33%, transparent 35%);
   flex-wrap: wrap;
   flex: 0 0 0%;
   transition: all 0.4s ease-out;
@@ -182,7 +182,7 @@ body {
 #time {
   font-size: 4rem;
   width: 300px;
-  margin-left: 0;
+  margin-left: 1rem;
   text-align: left;
   font-family: inherit;
  }
@@ -197,7 +197,7 @@ body {
 h1.greeting-user {
   /* margin-bottom: 3rem; */
   font-size: 1.5em;
-  
+  margin-left: 1rem;
 }
 
 h2.city {
@@ -219,6 +219,11 @@ h2.city {
   text-align: left;
   /* transition: all 0.5s ease-in-out; */
   height: 200px;
+}
+
+.card:hover {
+  background: #252525c5;
+  transition: 0.5s;
 }
 
 .card-ani {
