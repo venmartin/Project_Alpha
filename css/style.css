@@ -61,39 +61,34 @@ body {
   display: flex;
   place-content: center;
   cursor: pointer;
-  padding-botton: 0px;
-  
+  padding: 0;
+  background: none;
+  border: none;
 }
 
 
 .shift-bg1 {
   transition: 0.3s;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0;
   background: none;
+  border: none;
 }
 
 .shift-bg2 {
   transition: 0.3s;
   transform: rotate(29deg);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0;
   background: none;
+  border: none;
 }
 
 .shift-bg3 {
   transition: 0.3s;
   fill: currentColor;
   transform: rotate(180deg);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0;
   background: none;
+  border: none;
   
 }
 
@@ -651,4 +646,3 @@ Container for search bar, logo and search button.
     position: fixed;
     height: 200px;
   }
-}
