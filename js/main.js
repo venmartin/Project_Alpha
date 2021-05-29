@@ -219,6 +219,33 @@ document.querySelector('.shift-bg3').addEventListener('click', function() {
 })
 
 
+// Drop down background changer
+
+document.querySelector('.dropbtn').addEventListener('click', function () {
+  let dropBtn = document.querySelector('.dropbtn');
+  
+  if(dropBtn.classList) {
+    let bgDrop = document.querySelector('.change-bg');
+    let bgBtn1 = document.querySelector('.shift-bg1');
+    let bgBtn2 = document.querySelector('.shift-bg2');
+    let bgBtn3 = document.querySelector('.shift-bg3');
+    bgBtn1.classList.toggle('shift-hide');
+    bgBtn2.classList.toggle('shift-hide');
+    bgBtn3.classList.toggle('shift-hide');
+    bgDrop.classList.toggle('dropdown-bg');
+    dropBtn.classList.toggle('dropbtn-rotate');
+  }
+   
+  
+  }
+  
+)
+
+
+
+
+
+
 // Search Duckduckgo Directly.
 
 document.querySelector('.websr-btn').addEventListener('click', function () {

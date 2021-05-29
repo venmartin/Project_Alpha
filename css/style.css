@@ -24,45 +24,44 @@ body {
 } */
 
 .change-bg {
-  margin-top: -80px;
   width: 100vw;
   display: flex;
   flex-direction: row;
   padding: 0px;
+  margin: 0px;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to bottom, #292929a9 33%, transparent 33%);
-  flex-wrap: wrap;
-  /* flex: 0 0 0%; */
-  transition: 0.4s ease-out;
+  background: linear-gradient(to bottom, #292929a9 48%, transparent 48%);
+  visibility: hidden;
+  transition: 0.3s ease-out;
+  height: 0px;
+  margin-bottom: 20px;
   
+}
+
+.dropdown-bg {
+  height: 100px;
+  visibility: visible;
 }
 
 /* .shift-hide {
   visibility: hidden;
 } */
 
-.change-bg:hover {
-  margin-top: 0px;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  padding: 0px;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(to bottom, #292929a9 33%, transparent 35%);
-  flex-wrap: wrap;
-  flex: 0 0 0%;
-  transition: all 0.4s ease-out;
-}
-
 .dropbtn {
   display: flex;
+  flex-basis: 100%;
   place-content: center;
   cursor: pointer;
   padding: 0;
   background: none;
   border: none;
+  transition: 0.5s;
+}
+
+.dropbtn-rotate {
+  transition: 0.5s;
+  transform:rotate(180deg);
 }
 
 
@@ -89,6 +88,12 @@ body {
   background: none;
   border: none;
   
+}
+
+.shift-hide {
+  transition: 0.5s;
+  transform: scale(0.01);
+
 }
 
 .shift-bg1:hover, .shift-bg2:hover {
@@ -372,7 +377,7 @@ Container for search bar, logo and search button.
 }
 
 .duckduckgo svg {
-  background: #ffffff3e;
+  background: #ffffff9f;
   border-radius: 50%;
   margin: 12px;
   padding: 0px;
