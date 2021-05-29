@@ -57,7 +57,6 @@ body {
 }
 
 .dropbtn {
-  flex-basis: 100%;
   display: flex;
   place-content: center;
   cursor: pointer;
@@ -502,7 +501,7 @@ Container for search bar, logo and search button.
     font-size: 4em;
   }
 
-  .card-ani {
+  .card, .card-ani {
     margin-bottom: 70px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 15px;
@@ -553,8 +552,6 @@ Container for search bar, logo and search button.
   .container {
     height: 400px;
 
-    
-
   }
 
   body {
@@ -570,6 +567,7 @@ Container for search bar, logo and search button.
     align-items: center;
   }
   
+
   #time {
     margin-top: 10px;
     font-size: 2.5em;
@@ -590,8 +588,10 @@ Container for search bar, logo and search button.
     transition: all 0.5s ease-in-out;
   }
 
-  .card .card-ani {
+  .card, .card-ani {
     margin-top: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
   }
 
 
