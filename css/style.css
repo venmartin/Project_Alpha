@@ -383,6 +383,7 @@ Container for search bar, logo and search button.
   padding: 0px;
   color: #0000009b;
   display: flex;
+  pointer-events: none;
   
 }
 

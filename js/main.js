@@ -236,7 +236,7 @@ document.querySelector('.dropbtn').addEventListener('click', function () {
     dropBtn.classList.toggle('dropbtn-rotate');
   }
  }  
-)
+);
 
 
 
