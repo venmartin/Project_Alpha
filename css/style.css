@@ -10,7 +10,7 @@ body {
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
-  text-align: center; 
+  /* text-align: center;  */
   height: 100vh;
   color: black;
   background-position: center;
@@ -107,8 +107,11 @@ body {
   
 }
 
+/* 
+Time and Weather
+ */
+
 .container {
-  /* background: red; */
   font-family: 'Quicksand', sans-serif;
   display: flex;
   flex-direction: row;
@@ -364,12 +367,21 @@ Container for search bar, logo and search button.
 
 /* Search Bar */
 
+.duckduckgo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; 
+}
+
 .duckduckgo svg {
   background: #ffffff3e;
   border-radius: 50%;
   margin: 12px;
   padding: 0px;
   color: #0000009b;
+  display: flex;
+  
 }
 
 .duckduckgo {
@@ -380,7 +392,7 @@ Container for search bar, logo and search button.
 .online-search {
   width: 775px;
   height: 50px;
-  font-size: 2em;
+  font-size: 1.5em;
   text-indent: 5%;
   border: none;
   border-radius: 24px;
@@ -454,57 +466,25 @@ Container for search bar, logo and search button.
 
 
 
-@media(max-width: 1200px) {
-
-  .container {
-    flex-direction: column;
-    transition: all 0.5s ease-in-out;
-    height: 70vh;
-  }
-
-  h1.greeting-user {
-    font-size: 24px;
-    transition: all 0.5s ease-in-out;
-  }
-
-  .card-time {
-    transition: all 0.5s ease-in-out;
-    max-width: 750px;
-    max-height: 240px;
-  }
-
-  #time {
-    font-size: 6rem;
-    margin-right: 0px;
-    transition: all 0.5s ease-in-out;
-  }
-
-  #ampm {
-    margin-left: -80px;
-    margin-top: 14px;
-    font-size: 1.5rem;
- 
-  }
-
-  .card {
-    margin-right: 0;
-  }
-
+@media(max-width: 1220px) {
 
   .shortcut-container {
-    height: 22vh;
+    height: 200px;
+    transition: 0.2s ease-in-out;
+    display: grid;
+    grid-template-rows: 50% 75px auto;
+    grid-template-columns: auto auto auto auto auto auto;
   }
 
-  .shortcut-container > *{
-    margin-left: 10px;
-    margin-right: 10px;
-  }
 
-
-}
-
+  
 @media(max-width: 1000px) {
   
+  .container {
+    flex-direction: column;
+
+  }
+   
   h1.greeting-user {
     font-size: 20px;
     transition: all 0.5s ease-in-out;
@@ -514,10 +494,20 @@ Container for search bar, logo and search button.
     max-width: 400px;
     max-height: 200px;
     transition: all 0.5s ease-in-out;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 15px;
+   
+  
   }
   
   #time {
     font-size: 4em;
+  }
+
+  .card-ani {
+    margin-bottom: 70px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
   }
 
   .shortcut-container > * svg {
@@ -526,17 +516,19 @@ Container for search bar, logo and search button.
   }
 
   .websearch-container {
-    width: 380px;
-    margin-top: 220px;
+    width: 400px;
+    margin-top: 70px;
+    position: relative;
+    overflow: none;
   }
 
   .duckduckgo > * {
-    height: 3em;
-    width: 3em;
+    height: 4em;
+    width: 4em;
   }
 
   .online-search {
-    width: 300px;
+    width: 350px;
     height: 40px;
     font-size: 1em;
   }
@@ -557,48 +549,52 @@ Container for search bar, logo and search button.
 @media(max-width: 600px) {
   
   .container {
-    position: relative;
-    /* height: 60vh; */
-    height: 500px;
-    margin-bottom: 5px;
+    height: 400px;
+
+    
 
   }
 
   body {
     height: 100vh;
+    width: 100vw;
     
   }
   .card-time {  
     width: 400px;
-    height: 100px;
+    height: 110px;
     transition: all 0.5s ease-in-out;
-    margin-bottom: 5px;
     justify-content: center;
+    align-items: center;
   }
   
   #time {
-    margin-top: 30px;
-    font-size: 2em;
+    margin-top: 10px;
+    font-size: 2.5em;
     margin-bottom: 5px;
-    text-align: center;
+    
   }
 
   #ampm {
     
-    margin-left: -90px;
-    margin-top: 35px;
+    margin-left: -172px;
+    margin-top: 17px;
     font-size: 1rem;
  
   }
 
   h1.greeting-user {
-    font-size: 15px;
+    font-size: 18px;
     transition: all 0.5s ease-in-out;
+  }
+
+  .card .card-ani {
+    margin-top:
   }
 
 
   .websearch-container {
-    width: 380px;
+    width: 350px;
     margin-top: 5px;
     height: 100px;
   }
