@@ -235,10 +235,7 @@ document.querySelector('.dropbtn').addEventListener('click', function () {
     bgDrop.classList.toggle('dropdown-bg');
     dropBtn.classList.toggle('dropbtn-rotate');
   }
-   
-  
-  }
-  
+ }  
 )
 
 
