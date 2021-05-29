@@ -218,6 +218,56 @@ document.querySelector('.shift-bg3').addEventListener('click', function() {
    document.body.style.backgroundImage = `url("https://source.unsplash.com/1600x900/?city")`;
 })
 
+
+
+// Dock new tab eventlisteners.
+
+//Facebook
+
+document.querySelector('.facebook').addEventListener('click', function () {
+  window.open ("https://www.facebook.com", "_blank");
+})
+
+document.querySelector('.instagram').addEventListener('click', function () {
+  window.open ("https://www.instagram.com", "_blank");
+})
+
+document.querySelector('.youtube').addEventListener('click', function () {
+  window.open ("https://www.youtube.com", "_blank");
+})
+
+document.querySelector('.linkedin').addEventListener('click', function () {
+  window.open ("https://www.linkedin.com", "_blank");
+})
+
+document.querySelector('.netflix').addEventListener('click', function () {
+  window.open ("https://www.netflix.com", "_blank");
+})
+
+document.querySelector('.amazon').addEventListener('click', function () {
+  window.open ("https://www.amazon.com", "_blank");
+})
+
+document.querySelector('.gmail').addEventListener('click', function () {
+  window.open ("https://mail.google.com", "_blank");
+})
+
+document.querySelector('.reddit').addEventListener('click', function () {
+  window.open ("https://www.reddit.com", "_blank");
+})
+
+document.querySelector('.github').addEventListener('click', function () {
+  window.open ("https://www.github.com", "_blank");
+})
+
+document.querySelector('.slack').addEventListener('click', function () {
+  window.open ("https://www.slack.com", "_blank");
+})
+
+document.querySelector('.twitter').addEventListener('click', function () {
+  window.open ("https://www.twitter.com", "_blank");
+})
+
 // Drop down for background
 
 // document.querySelector('.dropbtn').addEventListener('click', function () {

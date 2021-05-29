@@ -28,7 +28,7 @@ body {
   width: 100vw;
   display: flex;
   flex-direction: row;
-  padding: 20px;
+  padding: 0px;
   align-items: center;
   justify-content: center;
   background: linear-gradient(to bottom, #292929a9 33%, transparent 33%);
@@ -47,7 +47,7 @@ body {
   width: 100vw;
   display: flex;
   flex-direction: row;
-  padding: 20px;
+  padding: 0px;
   align-items: center;
   justify-content: center;
   background: linear-gradient(to bottom, #292929a9 33%, transparent 33%);
@@ -61,25 +61,36 @@ body {
   display: flex;
   place-content: center;
   cursor: pointer;
+  padding-botton: 0px;
   
 }
 
 
-
-
 .shift-bg1 {
   transition: 0.3s;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .shift-bg2 {
   transition: 0.3s;
   transform: rotate(29deg);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .shift-bg3 {
   transition: 0.3s;
   fill: currentColor;
   transform: rotate(180deg);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   
 }
 
@@ -204,7 +215,6 @@ h2.city {
   border-bottom-right-radius: 15px;
   width: 100%;
   max-width: 400px;
-  margin-right: 3em;
   color: white;
   text-align: left;
   /* transition: all 0.5s ease-in-out; */
@@ -317,16 +327,35 @@ h1.temp {
   
 }
 
-/* Container for Search bar */
+
+
+/*
+
+Container for Search elements
+
+
+*/
 
 .websearch-container {
   /* height: 50vh; */
   height: 200px;
   display: flex;
   flex-direction: column;
+  width: inherit;
   /* margin-bottom: 100px; */
 }
 
+/*
+
+Container for search bar, logo and search button.
+
+*/
+
+.web-search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
 
 /* Search Bar */
 
@@ -338,8 +367,13 @@ h1.temp {
   color: #0000009b;
 }
 
+.duckduckgo {
+  flex-basis: 100%;
+  width: 0;
+}
+
 .online-search {
-  width: 800px;
+  width: 775px;
   height: 50px;
   font-size: 2em;
   text-indent: 5%;
@@ -356,6 +390,7 @@ h1.temp {
 }
 
 .websr-btn {
+  position: relative;
   margin-left: 0.5em;
   padding: 14px;
   border-radius: 50%;
