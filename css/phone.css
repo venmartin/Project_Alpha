@@ -219,6 +219,7 @@
     bottom: 43vh;
     transition: 0.5s;
     background: none;
+    padding:0;
     border-radius: 25px;
     border:none;
     

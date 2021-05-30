@@ -494,12 +494,18 @@ Container for search bar, logo and search button.
 }
 
 .popup__btn {
+  border: none;
+  background: none;
+  padding: none;
   cursor: pointer;
 }
 
 .pop__rotate {
   transform: rotate(180deg);
   transition: 0.3s;
+  border: none;
+  background: none;
+  padding: none;
 
 }
 
