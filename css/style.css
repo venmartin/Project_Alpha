@@ -498,6 +498,7 @@ Container for search bar, logo and search button.
   align-items: center;
   justify-content: center;
   position: absolute;
+  visibility: hidden;
 }
 
 .popup__btn {
