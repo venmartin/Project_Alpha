@@ -260,6 +260,7 @@
   .shortcut-container svg {
     height: 2em;
     width: 2em;
+    fill: white;
   }
   /* .shortcut-container:hover {
     transform: translateY(30px);
