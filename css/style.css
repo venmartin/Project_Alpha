@@ -530,6 +530,7 @@ Container for search bar, logo and search button.
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  z-index: index 2;
   
 }
 
@@ -546,6 +547,7 @@ Container for search bar, logo and search button.
   border-radius: 8px;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+  z-index: 1;
 
 }
 
