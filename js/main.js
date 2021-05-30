@@ -312,16 +312,11 @@ document.querySelector('.twitter').addEventListener('click', function () {
   window.open ("https://www.twitter.com", "_blank");
 })
 
-// Drop down for background
 
-// document.querySelector('.dropbtn').addEventListener('click', function () {
-//   let shiftHide = document.querySelector('.shift-hide');
-//   let changeBg = document.querySelector('.change-bg');
-  
-//   changeBg.classList.add('drop');
-//   changeBg.classList.remove('change-bg');
-//   shiftHide.classList.remove('shift-hide');
-// })
+// Docker pop up
+
+
+
 
 // Run the app
 // weather.fetchWeather('Sydney');

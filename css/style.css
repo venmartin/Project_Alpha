@@ -70,6 +70,7 @@ body {
   padding: 0;
   background: none;
   border: none;
+  
 }
 
 .shift-bg2 {
@@ -100,6 +101,7 @@ body {
   color: #757575;
   transition: 0.3s;
   transform: scale(1.2);
+  
 }
 
 .shift-bg3:hover {
@@ -361,6 +363,14 @@ Container for search bar, logo and search button.
 
 */
 
+.websearch-container{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
 .web-search {
   display: flex;
   flex-direction: row;
@@ -427,10 +437,48 @@ Container for search bar, logo and search button.
   background: #292929;
 }
 
+/* Popup button / div for shortcut icons on mobile devices */
+
+/* .popup {
+  display: inline-flex;
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  bottom: 0px;
+  
+}
+
+.popup__btn__container {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  bottom: -60px;
+  border:orangered;
+}
+
+.popup__btn {
+  position: relative;
+  bottom: 0px;
+  align-items: center;
+  justify-content: center;
+  bottom: 0px;
+  padding: 0px;
+  margin: 0px;
+  background: none;
+  
+}
+
+.popup__btn svg{
+  pointer-events: none;
+  transform: rotate(180deg);
+} */
+
 /* Container for Shortcut Icons */
 
 .shortcut-container {
-  display: flex;
+  display: inline-block;
   position: absolute;
   bottom: 0px;
   flex-wrap: wrap;
@@ -553,103 +601,3 @@ Container for search bar, logo and search button.
 
 
 }
-
-@media(max-width: 600px) {
-  
-  .container {
-    height: 400px;
-
-  }
-
-  body {
-    height: 100vh;
-    width: 100vw;
-    
-  }
-  .card-time {  
-    width: 400px;
-    height: 110px;
-    transition: all 0.5s ease-in-out;
-    justify-content: center;
-    align-items: center;
-  }
-  
-
-  #time {
-    margin-top: 10px;
-    font-size: 2.5em;
-    margin-bottom: 5px;
-    
-  }
-
-  #ampm {
-    
-    margin-left: -172px;
-    margin-top: 17px;
-    font-size: 1rem;
- 
-  }
-
-  h1.greeting-user {
-    font-size: 18px;
-    transition: all 0.5s ease-in-out;
-  }
-
-  .card, .card-ani {
-    margin-top: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 15px;
-  }
-
-
-  .websearch-container {
-    width: 350px;
-    margin-top: 5px;
-    height: 100px;
-  }
-
-  .duckduckgo > * {
-    height: 3em;
-    width: 3em;
-  }
-
-  .online-search {
-    width: 300px;
-    height: 40px;
-    font-size: 1em;
-  }
-
-  .websr-btn {
-    margin-left: 0.5em;
-    padding: 5px;
-    height: 40px;
-    width: 40px;
-    outline: none;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-  }
-
-  .shortcut-container {
-    top-margin: 0px;
-    /* transform: translateY(240px); */
-    height: 5px;
-    transition: all 0.5s ease-in-out;
-    overflow: none;
-  }
-
-  .shortcut-container svg {
-    height: 1.2em;
-    width: 1.2em;
-  }
-  /* .shortcut-container:hover {
-    transform: translateY(30px);
-    overflow: none;
-    height: 200px;
-    
-  } */
-
-  .popup__menu:hover {
-    width: 100vw;
-    position: fixed;
-    height: 200px;
-  }

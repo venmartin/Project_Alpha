@@ -1,0 +1,227 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  
+  .dropdown {
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+  }
+  .dropbtn {
+    width: 20px;
+    height: 20px;
+  }
+
+  #bg-container svg {
+    display: flex;
+    width: 1.3em;
+    height: 1.3em;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+  } 
+
+  
+
+  .dropdown-bg {
+    height: 40px;
+  }
+  
+  .container {
+    position: relative;
+    height: 400px;
+
+  }
+
+  body {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  .card-time {  
+    width: 80%;
+    height: 110px;
+    transition: all 0.5s ease-in-out;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  #time {
+    margin-top: 10px;
+    font-size: 2.2em;
+    margin-bottom: 5px;
+    
+  }
+
+  #ampm {
+    
+    margin-left: -172px;
+    margin-top: 17px;
+    font-size: 1rem;
+ 
+  }
+
+  h1.greeting-user {
+    font-size: 14px;
+    transition: all 0.5s ease-in-out;
+  }
+
+
+  /* Weather App */
+  .card {
+    width: 80%;
+    height: 20%;
+    margin-top: 0px;
+    padding-top: 10px;
+  }
+  .card-ani {
+    width: 80%;
+    height: 60%;
+    margin-top: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
+  }
+
+  .search-box {
+    font-size: 12px;
+    height: 32px;
+  }
+  
+  .searchbtn {
+    height: 32px;
+    width: 32px;
+  }
+
+  .weather h2 {
+    font-size: 14px;
+  }
+
+  .weather h1 {
+    font-size: 20px;
+
+  }
+
+  .weather > .flex-desc,
+    .humidity,
+    .wind {
+    font-size: 10px;
+  }
+
+
+/*
+
+  Websearch Bar 
+
+ */
+
+
+  .websearch-container {
+    width: 100%;
+    margin-top: 0px;
+    height: 0px;
+    bottom: 30px;
+  }
+
+  .websearch {
+        
+  }
+  .duckduckgo > * {
+    height: 2em;
+    width: 2em;
+  }
+
+  .online-search {
+    width: 250px;
+    height: 30px;
+    font-size: 0.8em;
+  }
+
+  .websr-btn {
+    margin-left: 0.5em;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+
+  .websr-btn svg {
+    height: 0.7em;
+    width: 0.7em;
+  }
+
+  /*
+  
+  Pop up button for Drawer 
+  
+  */
+
+  .popup {
+    display: inline-flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    bottom: 0px;
+    
+  }
+  
+  .popup__btn__container {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    /* bottom: -60px; */
+    border:orangered;
+  }
+  
+  .popup__btn {
+    position: relative;
+    bottom: 0px;
+    align-items: center;
+    justify-content: center;
+    bottom: 0px;
+    padding: 0px;
+    margin: 0px;
+    background: none;
+    
+  }
+  
+  .popup__btn svg{
+    pointer-events: none;
+    transform: rotate(180deg);
+  }
+
+
+
+  .shortcut-container {
+    position: relative;
+    height: 20px;
+    bottom: 0px;
+    margin: 0px;
+    padding: 0px;
+    
+  }
+
+  .shortcut-container svg {
+    height: 0.2em;
+    width: 0.2em;
+  }
+  /* .shortcut-container:hover {
+    transform: translateY(30px);
+    overflow: none;
+    height: 200px;
+    
+  } */
+
+  .popup__menu {
+   width: 100%;
+   height: 80%;
+  }
+  }
