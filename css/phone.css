@@ -31,23 +31,32 @@
   .container {
     position: relative;
     height: 400px;
+    margin-top: 70px;
+    margin-bottom: 0px;
 
   }
 
   body {
-    height: 100%;
+    height: 100vh;
+    max-height: 100vmax;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+    overflow: hidden;
+        
   }
+
   .card-time {  
     width: 80%;
     height: 110px;
     transition: all 0.5s ease-in-out;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0px;
   }
   
 
@@ -163,55 +172,93 @@
   */
 
   .popup {
-    display: inline-flex;
-    position: relative;
+    /* background: black; */
+    /* border: dashed; */
+    text-align: center;
+    position: fixed;
     width: 100%;
-    height: 100%;
+    height: 50px;
     align-items: center;
     justify-content: center;
-    bottom: 0px;
-    
+    bottom: 0;
   }
   
   .popup__btn__container {
+    display: inline-block;
     position: relative;
     align-items: center;
     justify-content: center;
     /* bottom: -60px; */
     border:orangered;
+    transition: 0.5s;
+    width: 20%;
+    
   }
   
   .popup__btn {
+    display:inline-block;
     position: relative;
-    bottom: 0px;
-    align-items: center;
-    justify-content: center;
-    bottom: 0px;
+    width: 100%;
+    /* align-items: center;
+    justify-content: center; */
     padding: 0px;
     margin: 0px;
     background: none;
+    cursor: pointer;
+    transition: 0.5s;
+    bottom: -43vh;
     
   }
   
   .popup__btn svg{
-    pointer-events: none;
-    transform: rotate(180deg);
+    top:0;
   }
 
-
-
-  .shortcut-container {
-    position: relative;
-    height: 20px;
-    bottom: 0px;
-    margin: 0px;
-    padding: 0px;
+  .popup__btn-move {
+    bottom: 43vh;
+    transition: 0.5s;
+    background: none;
+    border-radius: 25px;
     
   }
 
+  /* .popup__rotate {
+    transform: rotate(180deg);
+    transition: 0.5s;
+  } */
+
+  .dock {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    bottom: 0px;
+    height: 70vh;
+    transition: 0.5s;
+    
+  }
+
+  .shortcut-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    height: 400px;
+    width: 80%;
+    padding: 0px;
+ 
+  }
+ 
+   .shortcut-container > button {
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 3px;
+
+  }
+  
+
   .shortcut-container svg {
-    height: 0.2em;
-    width: 0.2em;
+    height: 2em;
+    width: 2em;
   }
   /* .shortcut-container:hover {
     transform: translateY(30px);
@@ -222,6 +269,14 @@
 
   .popup__menu {
    width: 100%;
-   height: 80%;
+   height: 0%;
+      
   }
+
+  .popup__short {
+    height: 100%;
+    width: 80%;
+    background: #000000e5;
+  }
+
   }

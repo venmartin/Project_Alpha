@@ -46,13 +46,13 @@ function setBgGreeting () {
 
     if(hour < 12) {
       // Morning
-      // document.body.style.backgroundImage = "url('../img/morning.jpg')";
+      
       document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?sunrise')";
       document.body.style.color = 'white';
       greeting.textContent = 'Good Morning';
     } else if (hour < 18) {
       // Afternoon
-      // document.body.style.backgroundImage = "url('../img/afternoon.jpg')";
+      
       document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?afternoon,landscape')";      
       greeting.textContent = 'Good Afternoon'; 
       document.body.style.color = 'white';
@@ -60,7 +60,7 @@ function setBgGreeting () {
     } else {
       
       // Evening
-      // document.body.style.backgroundImage = "url('../img/evening.jpg')";
+      
       document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?night')";
       greeting.textContent = 'Good Evening';
       document.body.style.color = 'white';
@@ -315,6 +315,35 @@ document.querySelector('.twitter').addEventListener('click', function () {
 
 // Docker pop up
 
+document.querySelector('.popup__btn').addEventListener('click', function () {
+  let popBtn = document.querySelector('.popup__btn');
+ 
+    if (popBtn.classList) {
+      let dockPop = document.querySelector('.dock');
+      let shortcutPop = document.querySelector('.shortcut-container');
+    dockPop.classList.toggle('popup__menu');
+    shortcutPop.classList.toggle('popup__short');
+    popBtn.classList.toggle('pop__rotate');
+    popBtn.classList.toggle('popup__btn-move');
+  }
+})
+
+// document.querySelector('.dropbtn').addEventListener('click', function () {
+//   let dropBtn = document.querySelector('.dropbtn');
+  
+//   if(dropBtn.classList) {
+//     let bgDrop = document.querySelector('.change-bg');
+//     let bgBtn1 = document.querySelector('.shift-bg1');
+//     let bgBtn2 = document.querySelector('.shift-bg2');
+//     let bgBtn3 = document.querySelector('.shift-bg3');
+//     bgBtn1.classList.toggle('shift-hide');
+//     bgBtn2.classList.toggle('shift-hide');
+//     bgBtn3.classList.toggle('shift-hide');
+//     bgDrop.classList.toggle('dropdown-bg');
+//     dropBtn.classList.toggle('dropbtn-rotate');
+//   }
+//  }  
+// );
 
 
 

@@ -9,9 +9,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
-  /* text-align: center;  */
+  text-align: center; 
   height: 100vh;
+  width: 100vw;
+  margin: 0px;
+  padding: 0px;
   color: black;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,8 +24,16 @@ body {
 /* #bg-container {
   display: none;
 } */
-
+.bg-selector {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 10px;
+  align-items: center;
+  
+}
 .change-bg {
+  position: relative;
   width: 100vw;
   display: flex;
   flex-direction: row;
@@ -125,7 +135,7 @@ Time and Weather
   text-align: center;
   /* height: 100vh; */
   height: 30vh;
-  margin-top: 10vh;
+  margin-top: 5%;
 }
 
 
@@ -209,7 +219,7 @@ h1.greeting-user {
 
 h2.city {
   margin-bottom: 20px;
-  /* opacity: 0.6; */
+  
 }
 
 
@@ -477,23 +487,53 @@ Container for search bar, logo and search button.
 
 /* Container for Shortcut Icons */
 
-.shortcut-container {
-  display: inline-block;
-  position: absolute;
-  bottom: 0px;
-  flex-wrap: wrap;
-  overflow: hidden;
-  margin: 0;
-  padding: 10px;
-  background:#0000009f;
-  width: 100vw;
-  height: 10vh;
+.popup {
   align-items: center;
   justify-content: center;
+  position: absolute;
+}
+
+.popup__btn {
+  cursor: pointer;
+}
+
+.pop__rotate {
+  transform: rotate(180deg);
+  transition: 0.3s;
+
+}
+
+
+.dock {
+  width: 100%;
+  height: 100px;
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  bottom: 0px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.shortcut-container {
+  display: flex;
+  position: relative;
+  bottom: 0px;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 10px;
+  background:#0000009f;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
   
 }
 
-.shortcut-container > * {
+.shortcut-container > button {
   position: relative;
   fill: white;
   margin-top: 10px;
@@ -505,7 +545,8 @@ Container for search bar, logo and search button.
   border: none;
   border-radius: 8px;
   transition: all 0.2s ease-in-out;
-  
+  cursor: pointer;
+
 }
 
 .shortcut-container > *:hover {
@@ -516,17 +557,21 @@ Container for search bar, logo and search button.
   
 }
 
+.shortcut-container > svg {
+  pointer-events: none;
+}
+
 
 
 @media(max-width: 1220px) {
 
-  .shortcut-container {
+  /* .shortcut-container {
     height: 200px;
     transition: 0.2s ease-in-out;
     display: grid;
     grid-template-rows: 50% 75px auto;
     grid-template-columns: auto auto auto auto auto auto;
-  }
+  } */
 
 
   
@@ -562,14 +607,14 @@ Container for search bar, logo and search button.
     border-bottom-left-radius: 15px;
   }
 
-  .shortcut-container {
+  /* .shortcut-container {
     display: flex;
   }
 
   .shortcut-container > * svg {
     height: 2em;
     width: 2em;
-  }
+  } */
 
   .websearch-container {
     width: 400px;
