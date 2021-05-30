@@ -67,6 +67,8 @@ body {
   background: none;
   border: none;
   transition: 0.5s;
+  color: white;
+  fill: white;
 }
 
 .dropbtn-rotate {
@@ -80,6 +82,8 @@ body {
   padding: 0;
   background: none;
   border: none;
+  color: white;
+  fill: white;
   
 }
 
@@ -89,6 +93,8 @@ body {
   padding: 0;
   background: none;
   border: none;
+  color: white;
+  fill: white;
 }
 
 .shift-bg3 {
@@ -98,7 +104,8 @@ body {
   padding: 0;
   background: none;
   border: none;
-  
+  color: white;
+  fill: white;
 }
 
 .shift-hide {
@@ -498,6 +505,8 @@ Container for search bar, logo and search button.
   background: none;
   padding: none;
   cursor: pointer;
+  fill:white;
+  color: white;  
 }
 
 .pop__rotate {
