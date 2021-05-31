@@ -94,43 +94,17 @@ function setName(e) {
     
   } else {
     localStorage.setItem('userName', e.target.innerText)
-    // userName.textContent = "[Enter Your Name]";
+
   }
 
-  // if (localStorage.setItem('userName', e.target.innerText) === null) {
-  //   userName.textContent = '[Enter Your Name]';
-  // }
 
 }
-
-// function getFocus () {
-//   if(localStorage.getItem('focus') === null) {
-//     focus.textContent = "[Enter Your Focus]";
-//   } else {
-//     focus.textContent = localStorage.getItem('focus');
-//   }
-// }
-
-// function setFocus(e) {
-//   if (e.key == 'Enter') {
-//     // Check if ENTER is pressed.
-//     // if (e.which == 13 || e.keyCode == 13) {
-//       localStorage.setItem('focus', e.target.innerText);
-//       focus.blur();
-//     // }
-//   } else {
-//     localStorage.setItem('focus', e.target.innerText)
-//   }
-
-// }
 
 
 // Listeners
 
 userName.addEventListener('keyup', setName);
 userName.addEventListener('blur', setName);
-// focus.addEventListener('keyup', setFocus);
-// focus.addEventListener('blur', setFocus);
 
 /*
 
@@ -264,56 +238,17 @@ document.querySelector('.online-search').addEventListener('keyup', function (eve
 
 
 
-// Dock new tab eventlisteners.
-
-//Facebook
-
-document.querySelector('.facebook').addEventListener('click', function () {
-  window.open ("https://www.facebook.com", "_blank");
-})
-
-document.querySelector('.instagram').addEventListener('click', function () {
-  window.open ("https://www.instagram.com", "_blank");
-})
-
-document.querySelector('.youtube').addEventListener('click', function () {
-  window.open ("https://www.youtube.com", "_blank");
-})
-
-document.querySelector('.linkedin').addEventListener('click', function () {
-  window.open ("https://www.linkedin.com", "_blank");
-})
-
-document.querySelector('.netflix').addEventListener('click', function () {
-  window.open ("https://www.netflix.com", "_blank");
-})
-
-document.querySelector('.amazon').addEventListener('click', function () {
-  window.open ("https://www.amazon.com", "_blank");
-})
-
-document.querySelector('.gmail').addEventListener('click', function () {
-  window.open ("https://mail.google.com", "_blank");
-})
-
-document.querySelector('.reddit').addEventListener('click', function () {
-  window.open ("https://www.reddit.com", "_blank");
-})
-
-document.querySelector('.github').addEventListener('click', function () {
-  window.open ("https://www.github.com", "_blank");
-})
-
-document.querySelector('.slack').addEventListener('click', function () {
-  window.open ("https://www.slack.com", "_blank");
-})
-
-document.querySelector('.twitter').addEventListener('click', function () {
-  window.open ("https://www.twitter.com", "_blank");
-})
+// Dock buttons open in a new tab.
 
 
-// Docker pop up
+let dockContainer = document.querySelectorAll('.dock__btn');
+dockContainer.forEach(dockContainer => dockContainer.addEventListener('click', function (e) {
+    let item = e.currentTarget.id;
+    window.open(`https://www.${item}.com`, '_blank');
+}));
+
+
+// Docker pop up // Mobile devices
 
 document.querySelector('.popup__btn').addEventListener('click', function () {
   let popBtn = document.querySelector('.popup__btn');
@@ -328,27 +263,11 @@ document.querySelector('.popup__btn').addEventListener('click', function () {
   }
 })
 
-// document.querySelector('.dropbtn').addEventListener('click', function () {
-//   let dropBtn = document.querySelector('.dropbtn');
-  
-//   if(dropBtn.classList) {
-//     let bgDrop = document.querySelector('.change-bg');
-//     let bgBtn1 = document.querySelector('.shift-bg1');
-//     let bgBtn2 = document.querySelector('.shift-bg2');
-//     let bgBtn3 = document.querySelector('.shift-bg3');
-//     bgBtn1.classList.toggle('shift-hide');
-//     bgBtn2.classList.toggle('shift-hide');
-//     bgBtn3.classList.toggle('shift-hide');
-//     bgDrop.classList.toggle('dropdown-bg');
-//     dropBtn.classList.toggle('dropbtn-rotate');
-//   }
-//  }  
-// );
 
 
 
 // Run the app
-// weather.fetchWeather('Sydney');
+
 currentTime();
 setBgGreeting();
 getName();
